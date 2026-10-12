@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC & Heating Repair Team | Friendswood, TX HVAC Contractor</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1e3a8a',
+                            900: '#0f172a',
+                        },
+                        coolblue: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        },
+                        orangeaccent: {
+                            500: '#f97316',
+                            600: '#ea580c',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(30, 58, 138, 0.85)), url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-banner {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-coolblue-500 selection:text-white">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo & Brand -->
+                <a href="#home" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 rounded-xl bg-coolblue-500 flex items-center justify-center text-white shadow-md shadow-coolblue-500/30 group-hover:bg-navy-900 transition-colors duration-300">
+                        <i class="fa-solid fa-snowflake text-2xl animate-pulse"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold tracking-tight text-navy-900 block leading-none">AC & HEATING</span>
+                        <span class="text-xs font-semibold tracking-widest text-coolblue-600 uppercase">Repair Team • Friendswood</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
+                    <a href="#home" class="hover:text-coolblue-600 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-coolblue-600 transition-colors">About</a>
+                    <a href="#services" class="hover:text-coolblue-600 transition-colors">Services</a>
+                    <a href="#why-us" class="hover:text-coolblue-600 transition-colors">Why Choose Us</a>
+                    <a href="#reviews" class="hover:text-coolblue-600 transition-colors">Reviews</a>
+                    <a href="#contact" class="hover:text-coolblue-600 transition-colors">Contact</a>
+                </nav>
+
+                <!-- Call Now Action Button -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="tel:+12819380984" class="flex items-center space-x-3 bg-orangeaccent-500 hover:bg-orangeaccent-600 text-white px-5 py-3 rounded-xl font-bold shadow-lg shadow-orangeaccent-500/25 transition-all transform hover:-translate-y-0.5">
+                        <div class="w-8 h-8 rounded-lg bg-white/20 flex items-center justify-center">
+                            <i class="fa-solid fa-phone text-white text-sm"></i>
+                        </div>
+                        <div class="text-left">
+                            <span class="text-[10px] uppercase tracking-wider block opacity-90 leading-none">Emergency Call</span>
+                            <span class="text-sm font-extrabold leading-tight">(281) 938-0984</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-700 hover:text-coolblue-600 focus:outline-none p-2 rounded-lg hover:bg-slate-100 transition">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="#home" class="block py-2 px-3 rounded-lg font-medium text-slate-700 hover:bg-coolblue-50 hover:text-coolblue-600 transition">Home</a>
+            <a href="#about" class="block py-2 px-3 rounded-lg font-medium text-slate-700 hover:bg-coolblue-50 hover:text-coolblue-600 transition">About</a>
+            <a href="#services" class="block py-2 px-3 rounded-lg font-medium text-slate-700 hover:bg-coolblue-50 hover:text-coolblue-600 transition">Services</a>
+            <a href="#why-us" class="block py-2 px-3 rounded-lg font-medium text-slate-700 hover:bg-coolblue-50 hover:text-coolblue-600 transition">Why Choose Us</a>
+            <a href="#reviews" class="block py-2 px-3 rounded-lg font-medium text-slate-700 hover:bg-coolblue-50 hover:text-coolblue-600 transition">Reviews</a>
+            <a href="#contact" class="block py-2 px-3 rounded-lg font-medium text-slate-700 hover:bg-coolblue-50 hover:text-coolblue-600 transition">Contact</a>
+            <div class="pt-2">
+                <a href="tel:+12819380984" class="w-full flex items-center justify-center space-x-2 bg-orangeaccent-500 text-white px-4 py-3 rounded-xl font-bold shadow-md">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call (281) 938-0984</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-24 lg:py-36 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center space-x-2 bg-coolblue-500/20 backdrop-blur-md border border-coolblue-400/30 px-4 py-1.5 rounded-full text-coolblue-100 font-semibold text-sm mb-6 shadow-sm">
+                    <i class="fa-solid fa-shield-halved text-orangeaccent-500"></i>
+                    <span>Trusted HVAC Contractor in Friendswood, TX</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    Reliable AC & Heating Repair in Friendswood, TX
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-200 mb-8 leading-relaxed font-normal">
+                    Dependable heating and cooling services designed to keep your home comfortable year-round. Fast response, expert troubleshooting, and efficient repairs when you need them most.
+                </p>
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="tel:+12819380984" class="inline-flex items-center justify-center space-x-3 bg-orangeaccent-500 hover:bg-orangeaccent-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-orangeaccent-500/30 transition transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-phone-volume text-xl"></i>
+                        <span>Call for Service</span>
+                    </a>
+                    <a href="#contact" class="inline-flex items-center justify-center space-x-3 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-xl font-bold text-lg transition transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-calendar-check text-coolblue-400"></i>
+                        <span>Request a Free Quote</span>
+                    </a>
+                </div>
+
+                <!-- Quick Stats / Badges -->
+                <div class="grid grid-cols-3 gap-6 mt-16 pt-10 border-t border-white/15">
+                    <div>
+                        <div class="text-3xl lg:text-4xl font-extrabold text-coolblue-400">5.0 ★</div>
+                        <div class="text-xs sm:text-sm text-slate-300 font-medium mt-1">Google Rating</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl lg:text-4xl font-extrabold text-white">24/7</div>
+                        <div class="text-xs sm:text-sm text-slate-300 font-medium mt-1">Emergency Support</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl lg:text-4xl font-extrabold text-orangeaccent-500">Local</div>
+                        <div class="text-xs sm:text-sm text-slate-300 font-medium mt-1">Friendswood Team</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-slate-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <!-- Image Side -->
+                <div class="relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80" alt="Professional HVAC Technician Working" class="w-full h-[450px] object-cover hover:scale-105 transition duration-700">
+                    </div>
+                    <!-- Floating Experience Badge -->
+                    <div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 hidden sm:flex items-center space-x-4">
+                        <div class="w-14 h-14 rounded-xl bg-coolblue-500 flex items-center justify-center text-white text-2xl shadow-lg shadow-coolblue-500/30">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-black text-navy-900 leading-tight">Expert</span>
+                            <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">HVAC Specialists</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Side -->
+                <div>
+                    <div class="inline-flex items-center space-x-2 bg-coolblue-100 text-coolblue-600 px-4 py-1.5 rounded-full font-semibold text-sm mb-6">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <span>About Our Company</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight mb-6">
+                        Dedicated to Your Home Comfort & System Efficiency
+                    </h2>
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-6">
+                        AC & Heating Repair Team is your premier local HVAC service provider based right here in Friendswood, TX. We focus on reliability, optimal energy efficiency, and total customer satisfaction. Whether you are dealing with a sudden AC breakdown during a Texas heatwave or need routine heating maintenance, our dedicated technicians deliver precision workmanship.
+                    </p>
+                    <p class="text-slate-600 text-base leading-relaxed mb-8">
+                        We pride ourselves on transparent communication, prompt arrival times, and effective solutions tailored specifically to your home layout and budget.
+                    </p>
+
+                    <!-- Feature check list -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-coolblue-100 text-coolblue-600 flex items-center justify-center text-xs font-bold">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="font-semibold text-slate-700">Skilled & Trained Technicians</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-coolblue-100 text-coolblue-600 flex items-center justify-center text-xs font-bold">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="font-semibold text-slate-700">Fast Response Times</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-coolblue-100 text-coolblue-600 flex items-center justify-center text-xs font-bold">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="font-semibold text-slate-700">Upfront & Honest Pricing</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-coolblue-100 text-coolblue-600 flex items-center justify-center text-xs font-bold">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="font-semibold text-slate-700">Customer Satisfaction Focus</span>
+                        </div>
+                    </div>
+
+                    <a href="tel:+12819380984" class="inline-flex items-center space-x-3 bg-navy-900 hover:bg-coolblue-600 text-white px-6 py-3.5 rounded-xl font-bold transition shadow-md">
+                        <span>Speak With An Expert</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center space-x-2 bg-coolblue-100 text-coolblue-600 px-4 py-1.5 rounded-full font-semibold text-sm mb-4">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <span>Comprehensive HVAC Solutions</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight mb-4">
+                    Our Professional Services
+                </h2>
+                <p class="text-slate-600 text-lg">
+                    From emergency repairs to seasonal tune-ups, we keep your heating and air conditioning systems running at peak performance.
+                </p>
+            </div>
+
+            <!-- Service Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-100 border border-slate-100 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="AC Repair & Troubleshooting" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900/60 to-transparent"></div>
+                            <span class="absolute bottom-4 left-4 bg-coolblue-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Cooling</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-navy-900 mb-3 group-hover:text-coolblue-600 transition">AC Repair & Troubleshooting</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Quick and accurate diagnosis of cooling failures, strange noises, weak airflow, or refrigerant leaks to restore your comfort fast.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="inline-flex items-center space-x-2 text-coolblue-600 font-bold hover:text-navy-900 transition text-sm">
+                            <span>Book AC Repair</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-100 border border-slate-100 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Heating System Repair" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900/60 to-transparent"></div>
+                            <span class="absolute bottom-4 left-4 bg-orangeaccent-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Heating</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-navy-900 mb-3 group-hover:text-coolblue-600 transition">Heating System Repair</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Professional furnace and heating system troubleshooting and repair to ensure your home stays cozy when colder weather hits Texas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="inline-flex items-center space-x-2 text-coolblue-600 font-bold hover:text-navy-900 transition text-sm">
+                            <span>Book Heating Repair</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-100 border border-slate-100 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=600&q=80" alt="HVAC Installation & Replacement" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900/60 to-transparent"></div>
+                            <span class="absolute bottom-4 left-4 bg-navy-900 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Upgrade</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-navy-900 mb-3 group-hover:text-coolblue-600 transition">HVAC Installation & Replacement</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Expert sizing and seamless installation of modern, energy-efficient air conditioners and heating units tailored to your property.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="inline-flex items-center space-x-2 text-coolblue-600 font-bold hover:text-navy-900 transition text-sm">
+                            <span>Get Installation Quote</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-100 border border-slate-100 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Preventive Maintenance & Tune-Ups" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900/60 to-transparent"></div>
+                            <span class="absolute bottom-4 left-4 bg-coolblue-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Maintenance</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-navy-900 mb-3 group-hover:text-coolblue-600 transition">Preventive Maintenance & Tune-Ups</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Seasonal tune-ups designed to extend equipment life, lower utility bills, and prevent costly unexpected breakdowns.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="inline-flex items-center space-x-2 text-coolblue-600 font-bold hover:text-navy-900 transition text-sm">
+                            <span>Schedule Tune-Up</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-100 border border-slate-100 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=600&q=80" alt="Air Conditioning System Inspection" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900/60 to-transparent"></div>
+                            <span class="absolute bottom-4 left-4 bg-coolblue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Inspection</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-navy-900 mb-3 group-hover:text-coolblue-600 transition">Air Conditioning System Inspection</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Thorough evaluations of your current setup to check electrical components, airflow performance, and overall system health.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="inline-flex items-center space-x-2 text-coolblue-600 font-bold hover:text-navy-900 transition text-sm">
+                            <span>Request Inspection</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-100 border border-slate-100 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Emergency HVAC Repairs" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900/60 to-transparent"></div>
+                            <span class="absolute bottom-4 left-4 bg-orangeaccent-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Emergency</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-navy-900 mb-3 group-hover:text-coolblue-600 transition">Emergency HVAC Repairs</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Rapid dispatch for urgent climate control emergencies when your comfort and safety are on the line in Friendswood.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="tel:+12819380984" class="inline-flex items-center space-x-2 text-orangeaccent-600 font-bold hover:text-navy-900 transition text-sm">
+                            <span>Call Now For Emergency</span>
+                            <i class="fa-solid fa-phone text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center space-x-2 bg-coolblue-100 text-coolblue-600 px-4 py-1.5 rounded-full font-semibold text-sm mb-6">
+                        <i class="fa-solid fa-star text-orangeaccent-500"></i>
+                        <span>The Friendswood Advantage</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight mb-6">
+                        Why Choose AC & Heating Repair Team?
+                    </h2>
+                    <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                        We are committed to delivering dependable, professional HVAC services with a focus on honesty, clear communication, and customer-first care.
+                    </p>
+
+                    <div class="space-y-6">
+                        <!-- Item 1 -->
+                        <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                            <div class="w-12 h-12 rounded-xl bg-coolblue-100 text-coolblue-600 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-navy-900 mb-1">Reliable Service You Can Trust</h3>
+                                <p class="text-slate-600 text-sm">We show up on time, treat your property with respect, and deliver dependable repairs.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                            <div class="w-12 h-12 rounded-xl bg-coolblue-100 text-coolblue-600 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-user-gear"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-navy-900 mb-1">Skilled Technicians</h3>
+                                <p class="text-slate-600 text-sm">Our experienced technicians accurately troubleshoot and resolve complex heating and cooling issues.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                            <div class="w-12 h-12 rounded-xl bg-coolblue-100 text-coolblue-600 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-navy-900 mb-1">Efficient Solutions</h3>
+                                <p class="text-slate-600 text-sm">We focus on optimizing your system's efficiency to save energy and lower monthly utility costs.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                            <div class="w-12 h-12 rounded-xl bg-coolblue-100 text-coolblue-600 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-comments"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-navy-900 mb-1">Customer-Focused Support</h3>
+                                <p class="text-slate-600 text-sm">Friendly customer service and hassle-free scheduling tailored to fit your busy life.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1000&q=80" alt="Technician inspecting HVAC unit" class="w-full h-[600px] object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section id="reviews" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center space-x-2 bg-coolblue-100 text-coolblue-600 px-4 py-1.5 rounded-full font-semibold text-sm mb-4">
+                    <i class="fa-solid fa-star text-orangeaccent-500"></i>
+                    <span>Verified Google Reviews</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight mb-4">
+                    What Our Customers Say
+                </h2>
+                <p class="text-slate-600 text-lg">
+                    Read genuine feedback from homeowners in Friendswood who rely on our services.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Review 1 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 shadow-lg shadow-slate-100 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-1 text-orangeaccent-500 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-lg font-medium italic mb-6">
+                            "I love em"
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-4 pt-4 border-t border-slate-200">
+                        <div class="w-12 h-12 rounded-full bg-coolblue-500 text-white font-bold flex items-center justify-center text-lg">
+                            JD
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy-900">Jonathan Diaz</h4>
+                            <span class="text-xs text-slate-500">Verified Google Review (5/5 Stars)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 shadow-lg shadow-slate-100 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-1 text-orangeaccent-500 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-lg font-medium italic mb-6">
+                            "the best"
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-4 pt-4 border-t border-slate-200">
+                        <div class="w-12 h-12 rounded-full bg-orangeaccent-500 text-white font-bold flex items-center justify-center text-lg">
+                            ZA
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy-900">Zeyad Alqahtani</h4>
+                            <span class="text-xs text-slate-500">Verified Google Review (5/5 Stars)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strong CTA Banner -->
+    <section class="py-16 cta-banner text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4">
+                Need AC or Heating Repair?
+            </h2>
+            <p class="text-slate-300 text-lg max-w-2xl mx-auto mb-8">
+                Don't let a faulty HVAC system disrupt your comfort. Get in touch with our expert team today for fast and reliable service in Friendswood, TX.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="tel:+12819380984" class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-orangeaccent-500 hover:bg-orangeaccent-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-orangeaccent-500/30 transition">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call Now: (281) 938-0984</span>
+                </a>
+                <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-white hover:bg-slate-100 text-navy-900 px-8 py-4 rounded-xl font-bold text-lg shadow-xl transition">
+                    <i class="fa-solid fa-calendar-days text-coolblue-600"></i>
+                    <span>Request Service</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center space-x-2 bg-coolblue-100 text-coolblue-600 px-4 py-1.5 rounded-full font-semibold text-sm mb-4">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <span>Get In Touch</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight mb-4">
+                    Contact Our HVAC Team
+                </h2>
+                <p class="text-slate-600 text-lg">
+                    Reach out via phone or fill out our quick service request form below to schedule your appointment.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Info Cards -->
+                <div class="space-y-6">
+                    <div class="bg-white p-8 rounded-3xl shadow-xl shadow-slate-100 border border-slate-100">
+                        <h3 class="text-2xl font-extrabold text-navy-900 mb-6">AC & Heating Repair Team</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-xl bg-coolblue-100 text-coolblue-600 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-navy-900">Our Location</h4>
+                                    <p class="text-slate-600 text-sm mt-1">208 S Friendswood Dr, Friendswood, TX 77546, United States</p>
+                                    <a href="https://maps.google.com/?q=208+S+Friendswood+Dr,+Friendswood,+TX+77546" target="_blank" class="inline-flex items-center space-x-1 text-coolblue-600 font-bold text-xs mt-2 hover:underline">
+                                        <span>Open in Google Maps</span>
+                                        <i class="fa-solid fa-external-link text-[10px]"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-xl bg-coolblue-100 text-coolblue-600 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-navy-900">Phone Number</h4>
+                                    <p class="text-slate-600 text-sm mt-1">Call us anytime for fast assistance</p>
+                                    <a href="tel:+12819380984" class="text-coolblue-600 font-extrabold text-base mt-1 block hover:underline">
+                                        +1 (281) 938-0984
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-xl bg-coolblue-100 text-coolblue-600 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-navy-900">Hours</h4>
+                                    <p class="text-slate-600 text-sm mt-1">Monday – Sunday: 24/7 Emergency Support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Embed Box -->
+                    <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-100 h-64 bg-slate-200">
+                        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=208+S+Friendswood+Dr,+Friendswood,+TX+77546&t=&z=15&ie=UTF8&iwloc=&output=embed" class="w-full h-full border-0"></iframe>
+                    </div>
+                </div>
+
+                <!-- Service Inquiry Form -->
+                <div class="bg-white p-8 sm:p-10 rounded-3xl shadow-xl shadow-slate-100 border border-slate-100">
+                    <h3 class="text-2xl font-extrabold text-navy-900 mb-2">Request Service Online</h3>
+                    <p class="text-slate-600 text-sm mb-6">Fill out the form below and our team will get back to you promptly.</p>
+                    
+                    <form id="service-form" class="space-y-5" onsubmit="handleFormSubmit(event)">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2" for="name">Full Name *</label>
+                            <input type="text" id="name" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-coolblue-500 focus:ring-2 focus:ring-coolblue-100 transition" placeholder="John Doe">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2" for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-coolblue-500 focus:ring-2 focus:ring-coolblue-100 transition" placeholder="(281) 000-0000">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2" for="service">Service Needed *</label>
+                                <select id="service" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-coolblue-500 focus:ring-2 focus:ring-coolblue-100 transition bg-white">
+                                    <option value="">Select a Service</option>
+                                    <option value="AC Repair & Troubleshooting">AC Repair & Troubleshooting</option>
+                                    <option value="Heating System Repair">Heating System Repair</option>
+                                    <option value="HVAC Installation & Replacement">HVAC Installation & Replacement</option>
+                                    <option value="Preventive Maintenance & Tune-Up">Preventive Maintenance & Tune-Up</option>
+                                    <option value="Air Conditioning Inspection">Air Conditioning Inspection</option>
+                                    <option value="Emergency HVAC Repair">Emergency HVAC Repair</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2" for="date">Preferred Appointment Date & Time</label>
+                            <input type="datetime-local" id="date" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-coolblue-500 focus:ring-2 focus:ring-coolblue-100 transition">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2" for="message">Message / Issue Description</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-coolblue-500 focus:ring-2 focus:ring-coolblue-100 transition" placeholder="Please describe any issues or what service you are looking for..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-orangeaccent-500 hover:bg-orangeaccent-600 text-white font-bold py-4 rounded-xl shadow-lg shadow-orangeaccent-500/25 transition transform hover:-translate-y-0.5">
+                            Submit Service Request
+                        </button>
+                    </form>
+
+                    <!-- Success Message Box -->
+                    <div id="form-success" class="hidden mt-6 bg-emerald-50 border border-emerald-200 text-emerald-800 p-6 rounded-2xl text-center">
+                        <div class="w-12 h-12 bg-emerald-500 text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-1">Request Received!</h4>
+                        <p class="text-sm text-emerald-700">Thank you! Our team will contact you shortly to confirm your appointment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-white pt-16 pb-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <!-- Col 1 -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 rounded-xl bg-coolblue-500 flex items-center justify-center text-white shadow-md">
+                            <i class="fa-solid fa-snowflake text-xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-lg font-extrabold tracking-tight text-white block leading-none">AC & HEATING</span>
+                            <span class="text-[10px] font-semibold tracking-widest text-coolblue-400 uppercase">Repair Team</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Professional, reliable AC and heating repair contractors serving Friendswood, TX and surrounding communities with year-round comfort solutions.
+                    </p>
+                    <div class="flex items-center space-x-3 text-coolblue-400">
+                        <a href="https://maps.google.com/?q=208+S+Friendswood+Dr,+Friendswood,+TX+77546" target="_blank" class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-coolblue-500 hover:text-white transition">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </a>
+                        <a href="tel:+12819380984" class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-coolblue-500 hover:text-white transition">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-slate-400 text-sm">
+                        <li><a href="#home" class="hover:text-coolblue-400 transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-coolblue-400 transition">About Us</a></li>
+                        <li><a href="#services" class="hover:text-coolblue-400 transition">Our Services</a></li>
+                        <li><a href="#why-us" class="hover:text-coolblue-400 transition">Why Choose Us</a></li>
+                        <li><a href="#reviews" class="hover:text-coolblue-400 transition">Customer Reviews</a></li>
+                        <li><a href="#contact" class="hover:text-coolblue-400 transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Our Services</h4>
+                    <ul class="space-y-3 text-slate-400 text-sm">
+                        <li><a href="#services" class="hover:text-coolblue-400 transition">AC Repair & Troubleshooting</a></li>
+                        <li><a href="#services" class="hover:text-coolblue-400 transition">Heating System Repair</a></li>
+                        <li><a href="#services" class="hover:text-coolblue-400 transition">HVAC Installation & Replacement</a></li>
+                        <li><a href="#services" class="hover:text-coolblue-400 transition">Preventive Maintenance & Tune-Ups</a></li>
+                        <li><a href="#services" class="hover:text-coolblue-400 transition">Air Conditioning Inspection</a></li>
+                        <li><a href="#services" class="hover:text-coolblue-400 transition">Emergency HVAC Repairs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Contact Info</h4>
+                    <div class="space-y-4 text-slate-400 text-sm">
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-location-dot text-coolblue-400 mt-1"></i>
+                            <span>208 S Friendswood Dr, Friendswood, TX 77546</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-phone text-coolblue-400"></i>
+                            <a href="tel:+12819380984" class="hover:text-white font-bold">+1 (281) 938-0984</a>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-clock text-coolblue-400"></i>
+                            <span>Available 24/7 for Emergencies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-800 text-center text-slate-500 text-xs flex flex-col sm:flex-row items-center justify-between">
+                <p>&copy; 2026 AC & Heating Repair Team. All rights reserved.</p>
+                <div class="mt-4 sm:mt-0 space-x-4">
+                    <span class="hover:text-slate-400 cursor-pointer">Privacy Policy</span>
+                    <span>&bull;</span>
+                    <span class="hover:text-slate-400 cursor-pointer">Terms of Service</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Mobile Call Button -->
+    <a href="tel:+12819380984" class="lg:hidden fixed bottom-6 right-6 z-50 bg-orangeaccent-500 hover:bg-orangeaccent-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl shadow-orangeaccent-500/55 animate-bounce transition">
+        <i class="fa-solid fa-phone text-2xl"></i>
+    </a>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form Submission Simulation
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('service-form');
+            const successBox = document.getElementById('form-success');
+            
+            // Hide form and show success state
+            form.style.display = 'none';
+            successBox.classList.remove('hidden');
+            
+            // Scroll to success box smoothly
+            successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    </script>
+</body>
+</html>
